@@ -11,7 +11,7 @@
 
 #### 一些说明
 - 代付接口的token验证
-```
+```csharp
 public void OnActionExecuting(ActionExecutingContext context)
 {
     //代付的请求做验证
@@ -47,7 +47,7 @@ public void OnActionExecuting(ActionExecutingContext context)
 2. 关于配置文件
 
 XXX都可以找jd要
-```
+```json
   "JdConfig": {
     "Version": "1.0.0",
     "Merchant": "XXX",//商户号
@@ -66,7 +66,7 @@ XXX都可以找jd要
 ```
 
 3. 主要的方法在Site.Common 下面的 JdHelper.cs内
-```
+```csharp
 /// <summary>
 /// pfx文件密码
 /// </summary>
@@ -88,7 +88,7 @@ test 项目就不放上来，太多敏感信息。下面demo里面的一些敏�
 没有引用官方提供的JDAKS.DLL 和 JDSecurity。项目可以直接部署到linux上。
 
 公司项目限定了只用借记卡，所以，这里默认。
-```
+```csharp
 /// <summary>
 /// 收款卡种 支付工具是TRAN时必填
 /// 卡类型 借记卡=DE；信用卡=CR
@@ -101,7 +101,7 @@ public string PayeeCardType => "DE";
 ### 代付
 - 地址 post /api/jd/defraypay
 - 参数
-``` 
+```json
 {
     "payee_bank_code": "CMB",
     "payee_account_type": "C",
@@ -118,7 +118,7 @@ public string PayeeCardType => "DE";
 }
 ```
 - 返回结果
-```
+```json
 {
     "customer_no": "客户号",
     "out_trade_no": "20180323160300",
@@ -138,7 +138,7 @@ public string PayeeCardType => "DE";
 - 地址 get /api/jd/tradequery
 - 参数 OutTradeNo=JGCHK00043820180323162213
 - 返回
-```
+```json
 {
     "out_trade_no": "JGCHK00043820180323162213",
     "biz_trade_no": "xxxx",
@@ -177,7 +177,7 @@ public string PayeeCardType => "DE";
 - 地址 post api/jd/ExpressContract
 - 签约之后发短信给用户
 - 参数 
-```
+```json
 {
   "card": {
     "bank": "CCB",
@@ -193,7 +193,7 @@ public string PayeeCardType => "DE";
 }
 ```
 - 返回
-```
+```json
 {
     "trade": {
         "type": "V",
@@ -212,7 +212,7 @@ public string PayeeCardType => "DE";
 - 地址 post api/jd/fastpay
 - 传收到的验证码
 - 参数
-```
+```json
 {
   "card": {
     "bank": "CCB",
@@ -230,7 +230,7 @@ public string PayeeCardType => "DE";
 }
 ```
 - 返回
-```
+```json
 {
     "trade": {
         "type": "S",
@@ -249,7 +249,7 @@ public string PayeeCardType => "DE";
 }
 ```
 ### 代付回调
-```
+```json
 /// <summary>
 /// 代付回调地址
 /// </summary>
