@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Site.Common", "Site.Common\Site.Common.csproj", "{31E11A97-5C7A-412B-9790-FB421FE82161}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Site.Lib", "Site.Lib\Site.Lib.csproj", "{EB70DE8B-8F51-4A5E-94C9-70267834452D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Site.MysqlData", "Site.MysqlData\Site.MysqlData.csproj", "{CAC272C9-74C7-4CE3-98BB-7A946703458F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Site.SqlServerData", "Site.SqlServerData\Site.SqlServerData.csproj", "{CED2F32F-5F3E-48A0-9F50-994D774D0DFC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Site.WebApi", "Site.WebApi\Site.WebApi.csproj", "{3FCA2A31-6D3C-48E4-B82A-1F0D17AED87A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JdPay.Data", "JdPay.Data\JdPay.Data.csproj", "{52B6BCE6-7439-4C68-A095-8709CC65DB46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31E11A97-5C7A-412B-9790-FB421FE82161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31E11A97-5C7A-412B-9790-FB421FE82161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31E11A97-5C7A-412B-9790-FB421FE82161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31E11A97-5C7A-412B-9790-FB421FE82161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB70DE8B-8F51-4A5E-94C9-70267834452D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB70DE8B-8F51-4A5E-94C9-70267834452D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB70DE8B-8F51-4A5E-94C9-70267834452D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB70DE8B-8F51-4A5E-94C9-70267834452D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAC272C9-74C7-4CE3-98BB-7A946703458F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC272C9-74C7-4CE3-98BB-7A946703458F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC272C9-74C7-4CE3-98BB-7A946703458F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC272C9-74C7-4CE3-98BB-7A946703458F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED2F32F-5F3E-48A0-9F50-994D774D0DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED2F32F-5F3E-48A0-9F50-994D774D0DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED2F32F-5F3E-48A0-9F50-994D774D0DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED2F32F-5F3E-48A0-9F50-994D774D0DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FCA2A31-6D3C-48E4-B82A-1F0D17AED87A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FCA2A31-6D3C-48E4-B82A-1F0D17AED87A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FCA2A31-6D3C-48E4-B82A-1F0D17AED87A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FCA2A31-6D3C-48E4-B82A-1F0D17AED87A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B6BCE6-7439-4C68-A095-8709CC65DB46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B6BCE6-7439-4C68-A095-8709CC65DB46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B6BCE6-7439-4C68-A095-8709CC65DB46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B6BCE6-7439-4C68-A095-8709CC65DB46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88521DFB-FC95-47CA-A51F-23FB948F168A}
+	EndGlobalSection
+EndGlobal

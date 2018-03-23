@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PackageId>JuHuaWang.Site.Common</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Lousaibiao</Authors>
+    <Description>聚化网基础类</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>2017-10-16 发布</PackageReleaseNotes>
+    <Copyright>Copyright 2017 (c) JuHuaWang Corporation. All rights reserved.</Copyright>
+    <PackageTags>.netcore2.0</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="NLog" Version="4.5.0-rc04" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.1.4" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.4.0" />
+    <PackageReference Include="YAXLib" Version="2.15.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JdPay.Data\JdPay.Data.csproj" />
+  </ItemGroup>
+</Project>

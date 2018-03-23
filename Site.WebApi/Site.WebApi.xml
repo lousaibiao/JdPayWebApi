@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Site.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Site.WebApi.Controllers.JdCallbackController">
+            <summary>
+            回调
+            </summary>
+        </member>
+        <member name="M:Site.WebApi.Controllers.JdCallbackController.DefrayPay(JdPay.Data.CallbackModel.DefrayPayCallbackQM)">
+            <summary>
+            代付回调地址
+            </summary>
+            <param name="resp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Site.WebApi.Controllers.JdCallbackController.ExpressPay(System.String)">
+            <summary>
+            快捷回调
+            </summary>
+            <param name="resp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Site.WebApi.Controllers.JdController.DefrayPayAsync(JdPay.Data.Request.DefrayPayReq)">
+            <summary>
+            代付
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Site.WebApi.Controllers.JdController.TradeQueryAsync(JdPay.Data.Request.TradeQueryReq)">
+            <summary>
+            查询订单结果
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Site.WebApi.Controllers.JdController.ExpressContractAsync(JdPay.Data.Request.TypeVItem)">
+            <summary>
+            快捷支付签约
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Site.WebApi.Controllers.JdController.FastPayAsync(JdPay.Data.Request.TypeSItem)">
+            <summary>
+            快捷支付
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Site.WebApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+            <param name="env"></param>
+        </member>
+        <member name="P:Site.WebApi.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Site.WebApi.Startup.ApplicationContainer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Site.WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Site.WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

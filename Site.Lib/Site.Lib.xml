@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Site.Lib</name>
+    </assembly>
+    <members>
+        <member name="T:Site.Lib.Model.DomainModel.JdConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.Version">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.Merchant">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.Terminal">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.DesKey">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.Md5Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.CustomerNo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.FastPayUrl">
+            <summary>
+            快捷支付请求地址
+            </summary>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.DefrayPayUrl">
+            <summary>
+            代付请求地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.DefrayPayNotifyUrl">
+            <summary>
+            代付回调地址
+            </summary>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.ExpressPayNotifyUrl">
+            <summary>
+            快捷回调地址
+            </summary>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.TradeQueryUrl">
+            <summary>
+            交易查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Site.Lib.Model.DomainModel.JdConfig.Sha256SignKey">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Site.Lib.Service.JdService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Site.Lib.Service.JdService.#ctor(Microsoft.Extensions.Options.IOptions{Site.Lib.Model.DomainModel.JdConfig})">
+            <summary>
+            
+            </summary>
+            <param name="jdConfigOpt"></param>
+        </member>
+        <member name="M:Site.Lib.Service.JdService.DefrayPayAsync(JdPay.Data.Request.DefrayPayReq)">
+            <summary>
+            参数要判断response_code，然后判断trade_status状态是否成功。
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Site.Lib.Service.JdService.Test(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Site.Lib.Service.JdService.TradeQueryAsync(JdPay.Data.Request.TradeQueryReq)">
+            <summary>
+            
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Site.Lib.Service.JdService.ExpressContractAsync(JdPay.Data.Request.TypeVItem)">
+            <summary>
+            快捷支付签约
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+            <exception cref="T:Site.Common.BizException"></exception>
+        </member>
+        <member name="M:Site.Lib.Service.JdService.FastPayAsync(JdPay.Data.Request.TypeSItem)">
+            <summary>
+            快捷支付
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Site.Lib.Service.JdService.ParseExpresssContractAsync(System.String)">
+            <summary>
+            快捷签约回调
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+            <exception cref="T:Site.Common.BizException"></exception>
+        </member>
+    </members>
+</doc>
