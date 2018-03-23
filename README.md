@@ -249,7 +249,7 @@ public string PayeeCardType => "DE";
 }
 ```
 ### 代付回调
-```json
+```csharp
 /// <summary>
 /// 代付回调地址
 /// </summary>
